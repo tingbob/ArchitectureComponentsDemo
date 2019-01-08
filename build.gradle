@@ -3,21 +3,20 @@
 buildscript {
     repositories {
         jcenter()
+	google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.2'
+        classpath 'com.android.tools.build:gradle:3.2.1'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
-        //gradle-retrolambda配置
-        classpath 'me.tatarka:gradle-retrolambda:3.7.0'
     }
 }
 
 allprojects {
     repositories {
         jcenter()
-        maven { url 'https://maven.google.com' }
+        google()
     }
 }
 
